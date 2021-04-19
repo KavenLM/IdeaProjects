@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电灯开关</title>
+</head>
+<body>
+<img src="img/off.gif" id="light" alt="light">
+
+<script>
+    var light = document.getElementById("light");
+    /*逻辑一
+    var count = 1;
+    function fun(){
+        switch(count%2){
+            case 1:
+                light.src = "img/on.gif";
+                count ++;
+                break;
+            case 0:
+                light. src = "img/off.gif";
+                count ++;
+                break;
+        }
+    }*/
+
+    //逻辑2
+    var flag = false;
+    function fun(){
+        if(flag){  //灯开则熄灭
+            light.src="img/off.gif";
+            flag = false;
+        }else{ //灯灭则点亮
+            light.src="img/on.gif";
+            flag = true;
+        }
+    }
+    light.onclick = fun;
+</script>
+</body>
+</html>

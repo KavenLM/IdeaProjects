@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        /*子选择器*/
+        div p{
+            color: red;
+        }
+        /*父选择器*/
+        div > p{
+            border: 1px solid;
+        }
+    /*属性选择器*/
+        input[type]{
+            background-color: beige;
+        }
+
+        a:link{
+            color: yellow;
+        }
+
+        a:visited{
+            color:gray;
+        }
+
+        a:active{
+            color: aliceblue;
+        }
+        a:hover{
+            color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div>
+    <p>腾讯游戏</p>
+</div>
+
+<p>天涯明月刀</p>
+
+<input type="text">
+
+<br>
+<a href="#">点我点我</a>
+</body>
+</html>

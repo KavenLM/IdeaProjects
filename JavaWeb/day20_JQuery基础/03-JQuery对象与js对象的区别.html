@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象与js对象的区别</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1">div1...</div>
+<div id="div2">div2...</div>
+<script>
+    //js对象
+   var divs =  document.getElementsByTagName("div");
+
+   //JQuery对象
+    var $divs = $("div");
+
+    alert(divs);
+    alert($divs);
+
+    //将所有div中的文本换为aaa
+    for(var i=0 ; i<divs.length ; i++){
+        divs[i].innerHTML = "aaa";
+    }
+    //将所有div中的文本换为bbb
+    $divs.html("bbb");
+
+    //jquery对象转为js对象
+    $divs[0].innerHTML = "sss";
+    $divs.get(1).innerHTML = "nnn";
+
+    //js对象转为jquery对象
+    $(divs).html("mmm");
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <style>
+        .red{
+            color:#ff0000;
+        }
+        #div1{
+            color: #0000ff;
+        }
+        div{
+            color:#00ff00;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+优先级：id选择器>类>标签
+-->
+<div id="div1" class="red">
+    hello css id选择器
+</div>
+<div class="red">
+    hello css 标签选择器
+</div>
+
+<p class="red">
+    hello css 类选择器
+</p>
+</body>
+</html>

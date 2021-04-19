@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp对象</title>
+</head>
+<body>
+<script>
+  var reg = new RegExp("^([0-9a-zA-Z_-])+@([0-9a-zA-Z_-])+(.[0-9a-zA-Z_-])+");
+  // var reg2 = /^([0-9a-zA-Z_-])+@([0-9a-zA-Z_-])+(.[0-9a-zA-Z_-])+/;
+  var reg2 = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
+  var email = "_dads22q_z1@23.com.cn.qq.bz";
+  var flag =  reg2.test(email);
+  document.write(flag);
+</script>
+</body>
+</html>

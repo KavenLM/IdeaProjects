@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp对象</title>
+</head>
+<body>
+<script>
+  var str = "https://www.baidu.com我爱你中国！";
+  var url = encodeURI(str);
+  document.write(url+"<br>");
+  var stro = decodeURI(url);
+  document.write(stro+"<br>");
+
+  var str2 = "https://www.baidu.com我爱你中国！";
+  var url2 = encodeURIComponent(str);
+  document.write(url2+"<br>");
+  var stro2 = decodeURIComponent(url2);
+  document.write(stro2+"<br>");
+
+  var str3 = "alert('hello')";
+  eval(str3);
+
+
+</script>
+</body>
+</html>

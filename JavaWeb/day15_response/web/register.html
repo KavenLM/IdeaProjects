@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+
+    <script>
+        window.onload = function () {
+            var checkCode = document.getElementById("checkCode");
+            var change = document.getElementById("change");
+            function fun(){
+                var date = new Date().getTime();
+
+                checkCode.src = "/day15/checkCodeServlet?"+date;
+            }
+            checkCode.onclick = fun;
+            change.onclick = fun;
+
+        }
+
+    </script>
+</head>
+<body>
+    <img id="checkCode" src="/day15/checkCodeServlet">
+    <a id="change" href="#">看不清,点击切换图片</a>
+</body>
+</html>

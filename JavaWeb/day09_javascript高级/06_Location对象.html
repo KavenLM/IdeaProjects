@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location对象</title>
+</head>
+<body>
+<input type="button" value="刷新" id="reloadBtn">
+<input type="button" value="去清华" id="linkBtn">
+
+
+<script>
+
+    // alert(location);
+
+   var reloadBtn = document.getElementById("reloadBtn");
+   reloadBtn.onclick = function () {
+        location.reload();
+   }
+
+    var linkBtn = document.getElementById("linkBtn");
+    linkBtn.onclick = function () {
+         location.href = "https://www.tsinghua.edu.cn/";
+
+    }
+
+</script>
+</body>
+</html>

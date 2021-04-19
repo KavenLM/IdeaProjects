@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window对象</title>
+</head>
+<body>
+<input type="button" value="打开" id="openbtn">
+<input type="button" value="关闭" id="closebtn">
+    <script>
+
+        /*
+            弹出对象 alert()  confirm()  prompt()
+        */
+        // alert("弹出");
+        /*var delbtn = document.getElementById("delbtn");
+        delbtn.onclick = function(){
+            var flag = confirm("确认删除吗？");
+            if(flag){
+                alert("已删除");
+            }else{
+                alert("下次果断点！");
+            }
+        }*/
+     /*   var delbtn = document.getElementById("delbtn");
+        delbtn.onclick = function () {
+           var message = prompt("请输入‘确认’");
+           alert(message);
+        }*/
+
+        /*
+            打开新窗口对象  open()  关闭窗口对象  close()
+         */
+        var newWindow;
+        var openbtn = document.getElementById("openbtn");
+        openbtn.onclick = function () {
+           newWindow = open("https://www.baidu.com");
+        }
+        var closebtn = document.getElementById("closebtn");
+        closebtn.onclick = function () {
+            newWindow.close();
+        }
+
+        /*
+            定时器对象
+            单次定时器：setTimeout()  清除: clearTimeout()
+            循环定时器：setInterval() 清除：clearInterval()
+
+         */
+        var one = setTimeout(fun,2000);
+        clearTimeout(one);
+
+        var two = setInterval(fun,2000);
+        clearInterval(two);
+        function fun() {
+            alert("boom~");
+        }
+    </script>
+</body>
+</html>

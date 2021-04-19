@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单项标签</title>
+</head>
+<body>
+<form action="#" method="get">
+    <label for="username">用户名:</label><input type="text" name="username" id="username" placeholder="请输入用户名"><br/>
+    <label for="password">密码:</label><input type="password" name="password" id="password" placeholder="请输入密码"><br/>
+    性别:<input type="radio" name="gender" value="male" id="male"  checked><label for="male">男</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">女</label><br/>
+    爱好:<input type="checkbox" name="hobby" value="football">踢球
+        <input type="checkbox" name="hobby" value="shopping">逛街
+        <input type="checkbox" name="hobby" value="java" checked>Java
+        <br/>
+    图片:<input type="file" name="image"><br/>
+    隐藏域:<input type="hidden" name="hidden" value="这里有一个隐藏域"><br/>
+    拾色器:<input type="color" name="color"><br/>
+    出生日期:<input type="date" name="birthday"><br/>
+            <input type="datetime-local">
+            <br/>
+    邮箱:<input type="email" name="email"><br/>
+    省份:<select name="province">
+            <option value="">--请选择--</option>
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">重庆</option>
+        </select><br/>
+    自我描述:<textarea name="des" rows="5" cols="20"></textarea>
+    <br/><input type="submit" value="登录">
+        <input type="button" value="一个按钮"><br/>
+        <input type="image" src="./img/regbtn.jpg">
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<users>
+    <user>
+        <name>张三</name>
+        <age>15</age>
+        <gender>male</gender>
+    </user>
+    <user>
+        <name>lisi</name>
+        <age>22</age>
+        <gender>female</gender>
+    </user>
+
+    <code>
+      <![CDATA[
+        DAKDJFSAJFISAFH
+      ]]>
+    </code>
+</users>

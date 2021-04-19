@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符</title>
+</head>
+<body>
+<script>
+    /*
+        &&
+        ||
+        !
+        number:0和NaN为false，其它为true
+        string:空字符串为false，其它为true
+        null&undefined: 都为false
+        obj: 所有对象都是true
+     */
+    var flag = true;
+    document.write(flag + "<br>");
+    document.write(!flag + "<br>");
+
+    var num = 0;
+    document.write(!!num + "<br>");
+    var num2 = NaN;
+    document.write(!!num2 + "<br>");
+
+    var str = "";
+    document.write(!!str + "<br>");
+    var str2 = "123";
+    document.write(!!str2 + "<br>");
+
+    var a = null;
+    document.write(!!a + "<br>");
+
+    var obj = new Date();
+    document.write(!!obj + "<br>");
+
+    document.write("<hr>")
+    var number = 0;
+    if(++ number){
+        alert(number);
+    }
+    document.write(number)
+</script>
+</body>
+</html>
